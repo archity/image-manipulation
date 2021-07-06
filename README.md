@@ -31,12 +31,12 @@ Python notebook with the above implemented operations can be accessed [here](./b
 
 ### 3.1 [Basic image loading](./opencv-basic/1.image-loading.py)
 
-### 3.2 [Copy-pasting snippet of an image](2.image-basics.py)
+### 3.2 [Copy-pasting snippet of an image](./opencv-basic/2.image-basics.py)
 
 | <img width="200" alt="" src="./opencv-basic/assets/dragon_compresed.jpg"> | <img width="200" alt="" src="./opencv-basic/assets/copy-paste-dragonhead.jpg"> |
 |:-:|:-:|
 
-### 3.3 [Webcam based video capture](3.camera-videocapture.py)
+### 3.3 [Webcam based video capture](./opencv-basic/3.camera-videocapture.py)
 
 | <img width="200" alt="" src="./opencv-basic/assets/webcam-screencapture.png"> |
 |:-:|
