@@ -22,6 +22,15 @@ if __name__ == "__main__":
         img = cv2.rectangle(img, pt1=(100, 100), pt2=(200, 200), color=(0, 256, 256), thickness=5)
         # Circle
         img = cv2.circle(img, center=(300, 300), radius=60, color=(0, 0, 256), thickness=-1)
+        # Text
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        img = cv2.putText(img, text="This is a text!",
+                          org=(200, height-10),
+                          fontFace=font,
+                          color=(0, 0, 0),
+                          thickness=2,
+                          lineType=cv2.LINE_AA,
+                          fontScale=1)
 
         cv2.imshow("Frame", img)
 
