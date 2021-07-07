@@ -31,12 +31,23 @@ Python notebook with the above implemented operations can be accessed [here](./b
 
 ### 3.1 [Basic image loading](./opencv-basic/1.image-loading.py)
 
-### 3.2 [Copy-pasting snippet of an image](./opencv-basic/2.image-basics.py)
+### 3.2 [Extracting snippet of an image](./opencv-basic/2.image-basics.py)
 
 | <img width="200" alt="" src="./opencv-basic/assets/dragon_compresed.jpg"> | <img width="200" alt="" src="./opencv-basic/assets/copy-paste-dragonhead.jpg"> |
 |:-:|:-:|
 
 ### 3.3 [Webcam based video capture](./opencv-basic/3.camera-videocapture.py)
 
-| <img width="200" alt="" src="./opencv-basic/assets/webcam-screencapture.png"> |
+* Capturing webcam feed
+* Multiply, manipulate and fit to grid
+
+| <img width="200" alt="" src="./opencv-basic/assets/webcam-screencapture-4frames.png"> |
+|:-:|
+
+### 3.4 [Drawing and Writing on Image](./opencv-basic/4.shape-drawing.py)
+
+* Drawing overlay shapes and text on a webcam feed
+* Can be generalized to any image or video
+
+| <img width="200" alt="" src="./opencv-basic/assets/webcam-screencapture-shape-text.png"> |
 |:-:|
