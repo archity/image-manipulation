@@ -51,3 +51,12 @@ Python notebook with the above implemented operations can be accessed [here](./b
 
 | <img width="200" alt="" src="./opencv-basic/assets/webcam-screencapture-shape-text.png"> |
 |:-:|
+
+### 3.5 [Colour Detection and Masking](./opencv-basic/5.colour-detection.py)
+
+* Creating a masking image to detect a certain range of colour
+* Applying mask to the video frame/image using `bitwise_and`
+
+
+| <img width="400" alt="" src="./opencv-basic/assets/mask-colour-detection.png"> |
+|:-:|
