@@ -57,6 +57,12 @@ Python notebook with the above implemented operations can be accessed [here](./b
 * Creating a masking image to detect a certain range of colour
 * Applying mask to the video frame/image using `bitwise_and`
 
-
 | <img width="400" alt="" src="./opencv-basic/assets/mask-colour-detection.png"> |
 |:-:|
+
+### 3.6 [Corner Detection]()
+
+* Shi-Tomasi Corner Detector
+
+| <img width="200" alt="" src="./opencv-basic/assets/corners_chessboard.png"> | <img width="200" alt="" src="./opencv-basic/assets/corners_dragon.png"> |
+|:-:|:-:|
