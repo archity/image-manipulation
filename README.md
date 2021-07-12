@@ -60,9 +60,46 @@ Python notebook with the above implemented operations can be accessed [here](./b
 | <img width="400" alt="" src="./opencv-basic/assets/mask-colour-detection.png"> |
 |:-:|
 
-### 3.6 [Corner Detection]()
+### 3.6 [Corner Detection](./opencv-basic/6.corner-detection.py)
 
 * Shi-Tomasi Corner Detector
 
 | <img width="200" alt="" src="./opencv-basic/assets/corners_chessboard.png"> | <img width="200" alt="" src="./opencv-basic/assets/corners_dragon.png"> |
 |:-:|:-:|
+
+### 3.7 [Template Matching](./opencv-basic/7.template-matching.py)
+
+#### Input:
+
+* Base input image:
+
+    | <img width="400" alt="" src="./opencv-basic/assets/smh_rhb_1024px.jpg"> |
+    |:-:|
+
+* Template image(s), aka images to detect:
+
+    | <img width="100" alt="" src="./opencv-basic/assets/smh_rhb_car_blue.jpg"> | <img width="100" alt="" src="./opencv-basic/assets/smh_rhb_car_red.jpg"> |
+    |:-:|:-:|
+
+We can make use of one or several methods for performing the template matching. AVaiable methods are:
+
+```py
+methods = [cv2.TM_CCOEFF,
+            cv2.TM_CCOEFF_NORMED,
+            cv2.TM_CCORR,
+            cv2.TM_CCORR_NORMED,
+            cv2.TM_SQDIFF,
+            cv2.TM_SQDIFF_NORMED]
+```
+
+#### Output:
+
+*  Blue car
+
+    | <img width="400" alt="" src="./opencv-basic/assets/blue_car_detect_compresesd.jpg"> |
+    |:-:|
+
+* Red car
+
+    | <img width="400" alt="" src="./opencv-basic/assets/red_car_detect_compressed.jpg"> |
+    |:-:|
