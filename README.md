@@ -81,7 +81,7 @@ Python notebook with the above implemented operations can be accessed [here](./b
     | <img width="100" alt="" src="./opencv-basic/assets/smh_rhb_car_blue.jpg"> | <img width="100" alt="" src="./opencv-basic/assets/smh_rhb_car_red.jpg"> |
     |:-:|:-:|
 
-We can make use of one or several methods for performing the template matching. AVaiable methods are:
+We can make use of one or several methods for performing the template matching. Available methods are:
 
 ```py
 methods = [cv2.TM_CCOEFF,
@@ -103,3 +103,21 @@ methods = [cv2.TM_CCOEFF,
 
     | <img width="400" alt="" src="./opencv-basic/assets/red_car_detect_compressed.jpg"> |
     |:-:|
+
+
+## 4. Image Stitching
+
+* A simple Python script to stitch all the images in a specific directory to create a final collage.
+
+* Pillow library utilized for image reading/writing
+
+* Images are stitched in alphabetical order, from left to right, top to bottom
+
+* Preserves the quality, as it stitches the images as it is, without compressing
+
+* Python script [here](./image-stitching.py)
+
+* Output *snapshot*:
+
+| <img width="400" alt="" src="./img/maisiewilliams_digitalart_collage_snapshot.jpg"> |
+|:-:|
