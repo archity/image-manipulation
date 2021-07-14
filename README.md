@@ -104,6 +104,10 @@ methods = [cv2.TM_CCOEFF,
     | <img width="400" alt="" src="./opencv-basic/assets/red_car_detect_compressed.jpg"> |
     |:-:|
 
+### 3.8 [Face and Eye Detection](./opencv-basic/8.face-eye-detection.py)
+
+*
+*
 
 ## 4. Image Stitching
 
