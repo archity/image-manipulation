@@ -12,11 +12,15 @@ IMAGES_PATH = "./img/extended/"
 # Image format
 IMAGES_FORMAT = ['.png', '.PNG']
 
-# The size of each small picture
-IMAGE_SIZE = 4096
+# The size of each small picture, if square
+# IMAGE_SIZE = 4096
 
-IMAGE_ROW = 4
-IMAGE_COLUMN = 4
+# The sizes of each small picture, if rectangular
+IMAGE_SIZE_C = 1766
+IMAGE_SIZE_R = 1043
+
+IMAGE_ROW = 2
+IMAGE_COLUMN = 2
 IMAGE_SAVE_PATH = './img/final.png'
 
 
@@ -32,14 +36,14 @@ def image_compose(image_names):
     """
 
     # Create a new canvas on which all the images would be placed
-    to_image = Image.new('RGB', (IMAGE_COLUMN * IMAGE_SIZE, IMAGE_ROW * IMAGE_SIZE))
+    to_image = Image.new('RGBA', (IMAGE_COLUMN * IMAGE_SIZE_C, IMAGE_ROW * IMAGE_SIZE_R))
 
     # Loop through all pictures, paste each picture
     for y in range(1, IMAGE_ROW + 1):
         for x in range(1, IMAGE_COLUMN + 1):
             from_image = Image.open(IMAGES_PATH + image_names[IMAGE_COLUMN * (y - 1) + x - 1]).resize(
-                (IMAGE_SIZE, IMAGE_SIZE), Image.ANTIALIAS)
-            to_image.paste(from_image, ((x - 1) * IMAGE_SIZE, (y - 1) * IMAGE_SIZE))
+                (IMAGE_SIZE_C, IMAGE_SIZE_R), Image.ANTIALIAS)
+            to_image.paste(from_image, ((x - 1) * IMAGE_SIZE_C, (y - 1) * IMAGE_SIZE_R))
 
     return to_image.save(IMAGE_SAVE_PATH)  # save the new image
 
